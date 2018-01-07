@@ -42,3 +42,14 @@ print('%2d-%02d' % (3, 1))
 print('Hello, {0}, 成绩提升了{1}%'.format('小张',17.23))
 
 # list：有序集合
+classmattes = ['Michael','Bob','Tracy']
+print(classmattes)
+# 获取最后一个元素
+print(classmattes[-1])
+# append：list追加元素到末尾
+# insert：插入到指定位置
+# pop：删除list末尾的元素或pop(i)：删除指定位置的元素
+
+# tuple【元组】：一旦初始化就不能修改，即每个元素的指向永远不变
+classmattes = ('Michael','Bob','Tracy')
+# 定义tuple时，元素就必须被确定下来
