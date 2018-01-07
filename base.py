@@ -53,3 +53,9 @@ print(classmattes[-1])
 # tuple【元组】：一旦初始化就不能修改，即每个元素的指向永远不变
 classmattes = ('Michael','Bob','Tracy')
 # 定义tuple时，元素就必须被确定下来
+
+# 循环
+# 1. for...in循环。range：生成一个整数序列
+# 2. while
+# 3. break：允许提前退出循环
+# 4. continue：提前结束本轮循环，并直接开始下一轮循环
