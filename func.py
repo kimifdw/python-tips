@@ -47,3 +47,14 @@ def add_end(L=None):
     return L
 print(add_end())
 print(add_end())
+
+# 3. 可变参数，允许传入任意参数，包括0
+def calc(*numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n * n
+    return sum
+
+# 4. 关键字参数：允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动转化为dict
+extra ={'city':'Beijing','job':'Engineer'}
+person('Jack',24,**extra)
