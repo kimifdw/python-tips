@@ -99,7 +99,7 @@ def fact_iter(num, product):
     if num == 1:
         return product
     return fact_iter(num-1, num*product)
-#7. 总结
-##7.1 默认参数一定要用不可变对象；
-##7.2 `*args`是可变参数，接收的是一个tuple或一个list;
-##7.3 `**kw`是关键字参数，kw接收的是一个dict;
+#8. 总结
+##8.1 默认参数一定要用不可变对象；
+##8.2 `*args`是可变参数，接收的是一个tuple或一个list;
+##8.3 `**kw`是关键字参数，kw接收的是一个dict;
