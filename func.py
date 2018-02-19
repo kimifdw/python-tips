@@ -89,6 +89,16 @@ def person(name, age, **kw):
 
 #6. 参数组合
 ##6.1 参数定义的顺序：必选参数、默认参数、可变参数、命名关键字参数和关键字参数
+
+#7. 递归
+##7.1 定义：在函数返回的时候，调用自身本身，并且return语句不能包含表达式
+def fact(n):
+    return fact_iter(n,1)
+
+def fact_iter(num, product):
+    if num == 1:
+        return product
+    return fact_iter(num-1, num*product)
 #7. 总结
 ##7.1 默认参数一定要用不可变对象；
 ##7.2 `*args`是可变参数，接收的是一个tuple或一个list;
