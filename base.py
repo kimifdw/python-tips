@@ -49,13 +49,29 @@ print(classmattes[-1])
 # append：list追加元素到末尾
 # insert：插入到指定位置
 # pop：删除list末尾的元素或pop(i)：删除指定位置的元素
+# 列表生成器：range()
 
 # tuple【元组】：一旦初始化就不能修改，即每个元素的指向永远不变
 classmattes = ('Michael','Bob','Tracy')
 # 定义tuple时，元素就必须被确定下来
 
-# 循环
+# 循环[迭代]
 # 1. for...in循环。range：生成一个整数序列
 # 2. while
 # 3. break：允许提前退出循环
 # 4. continue：提前结束本轮循环，并直接开始下一轮循环
+# 5. 用切片代替
+# 6. 可迭代对象：通过`isinstance()`判断一个对象是否是Iterable对象
+# 7. 迭代器(Iterator)：被next()函数调用并不断返回下一个值的对象，可以使用isinstance()判断一个对象是否是Iterator对象
+# 8. 生成器：一边循环一边计算的机制；包含yield变量即为generator; 调用next()的时候执行，遇到yield语句返回
+# 8.1 Iterable类型：作用于for循环的对象，如list、dict、str等
+# 8.2 Iterator类型：作用于next()函数的对象，一个惰性计算的序列；
+# 8.3 for循环：通过不断调用next()函数实现的
+g = (x * x for x in range(10))
+def fib(max):
+    n, a, b = 0, 0, 1
+    while n < max:
+        yield b
+        a, b = b, a + b
+        n = n + 1
+    return 'done'
